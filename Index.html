@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Home</title>
+       <style>
+           @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+            *{
+              padding: 0%;
+              margin: 0%;
+            }
+              body {
+                     margin: 0;             
+                     font-family: 'Work Sans', sans-serif;
+                     font-weight: 800;
+                     overflow-x: hidden;
+                   
+              }
+              .container {
+                     width: 100%;
+                   
+                                       
+              }
+              header {
+              background: #191E23;
+              }
+              header::after {
+              content: '';
+              display: table;
+              clear: both;
+              }
+
+              .logo {
+              float: left;
+              padding: 10px 250px;
+              }
+
+              nav {
+              float: right;
+              }
+              nav ul {
+              margin: 0;
+              padding: 0px 250px;
+              list-style: none;
+              display: flex;
+              }
+
+              nav li {
+              padding: 20px 20px;
+              }
+
+              nav a {
+              color: white;
+              text-decoration: none;
+              text-transform: uppercase;
+              font-size: 14px;
+              }
+
+              
+              .hero{
+                     width: 100%;
+                     margin-bottom: -50px;
+                     display: flex;
+               
+                     position: relative;
+              }
+              .hero > div {
+                     position: absolute;
+                     top: 50%;
+                     left: 50%;
+                     transform: translate(-50%, -50%);
+                     color: azure; 
+                    
+              }
+              .welcome{
+              height: 200px; 
+              width: 700px
+              }
+              .about{
+                     position: relative;
+                     background: #0063b5;
+                     color: white;
+                     text-align: left;
+                     height: 300px;
+                     width: 100%;
+                    
+              }
+              .atext{
+                     font-size: 20px;
+                     position: absolute;
+                     top: 50%;
+                     left: 50%;
+                     transform: translate(-50%, -50%); 
+ 
+                     text-align: left;    
+              }
+              .gallery{
+                     width: 100%;
+                     height: 500px;
+                     background-color: #191E23;
+                     color: white;
+              }
+              .imgh{
+                     text-align: center;
+                     padding-top: 100px;
+              }
+              .imgp{
+                     text-align: center;
+                 
+              }
+              .images{
+                     display: flex;
+                     position: relative;
+                     justify-content: space-around;
+              }
+              .img1, .img2, .img3{            
+                     width: 400px;
+                     height: 250px;
+                     padding: 30px 30px;
+                     cursor: pointer;  
+              }
+              .images > img:hover{ 
+                     height: 280px; 
+                     width: 450px;  
+                            
+              } 
+              .map-box{
+                     width: 100%;
+                     height: 500px;
+                     background-color: white;
+              }
+              .map-box{
+                     position: relative;
+              }
+              iframe{
+                     width: 1000px; 
+                     height: 400px;
+                     position:absolute;
+                     top: 50%;
+                     left: 50%;
+                     transform: translate(-50%, -50%);
+                      
+              }
+            
+              footer{
+                     background-color: #191E23;
+                     height: 250px;
+                     width: 100%;
+              }
+              .foot-container{                     
+                     display: flex;
+                     justify-content: space-around;
+                     padding-top: 80px;
+              }
+            
+              footer ul {
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              }
+
+              footer li {
+              display: inline-block;
+              margin-left: 70px;
+              padding-top: 23px;
+              position: relative;
+              }
+
+              footer a {
+              color: white;
+              text-decoration: none;
+              text-transform: uppercase;
+              font-size: 14px;
+              }
+              footer a:hover {
+              color: skyblue;
+              font-size: 20px;
+              cursor: pointer;
+              }
+              .f-last{
+              text-align: center;
+              color: white;
+              padding-top: 55px;
+              font-size: 12px;
+              }
+
+              @media only screen and (max-width: 1415px ) {
+                     nav ul {
+              margin: 0;
+              padding: 0px 150px;
+              list-style: none;
+              display: flex;
+              }
+
+              nav li {
+              padding: 20px 20px;
+              }
+              .logo{
+                     padding: 10px 150px;
+              }
+              .img1, .img2, .img3{            
+                     width: 350px;
+                     height: 200px;
+                     padding: 50px 40px;
+                     cursor: pointer;  
+              }
+              .images > img:hover{ 
+                     height: 280px; 
+                     width: 450px;  
+                            
+              } 
+              }
+
+              @media only screen and (max-width: 1220px ) {
+            
+              nav ul {
+              margin: 0;
+              padding: 0px 100px;
+              list-style: none;
+              display: flex;
+              }
+
+              nav li {
+              padding: 20px 20px;
+              }
+
+              .logo{
+                     padding: 10px 100px;
+              }
+              }
+
+              @media only screen and (max-width: 1190px) {
+              .gallery{
+                     width: 102%;
+                     height: 770px;
+                  
+                     background-color: #191E23;
+                     color: white;
+              }
+              .images{
+                     display: flex;
+                     flex-wrap: wrap;
+                     flex-direction: row;
+                     position: relative;
+                     justify-content: space-around;
+              }
+              .imgh{
+                     text-align: center;
+                     padding-top: 100px;
+              }
+              .imgp{
+                     text-align: center;
+                 
+              }
+              iframe{
+                     width: 800px;
+              }
+              }
+              @media only screen and (max-width: 900px) {
+              body{
+                     overflow-x: hidden;
+              }
+              .welcome{
+              height: 150px; 
+              width: 500px
+              }
+              .logo{
+                     padding: 10px 60px;
+              }
+              nav ul {
+              margin: 0;
+              padding: 0px 60px;
+              list-style: none;
+              display: flex;
+              }
+            
+              .atext{
+                     font-size: 18px;
+              }
+            
+              iframe{
+              width: 600px;
+              height: 300px;
+              }
+              .map-box{
+                     width: 100%;
+                     height: 400px;
+                     background-color: white;
+              }
+              }
+
+              @media only screen and (max-width: 840px) {
+                     .gallery{
+                     width: 102%;
+                     height: 1100px;      
+              }
+              }
+       </style> 
+</head>
+
+<header>
+       <div class="container">
+         <a href="Index.html"><img src="https://i.postimg.cc/jq6wrz2q/Group-3-2x.png" alt="logo" class="logo" height="50px" width="144px"></a>        
+         <nav>
+           <ul>                  
+             <li><a href="Index.html">Home</a></li>
+             <li><a href="Contact.html">Contact</a></li>
+             <li><a href="News.html">News</a></li>
+           </ul>
+         </nav>
+       </div>
+</header>
+
+<body>
+
+       <section class="hero-box">
+            <div class="hero">
+              <img src="https://uploads-ssl.webflow.com/5e71b829d37a8158f8643ac3/5e7e5d4a5836db2c66b3284b_bg-header.jpg" alt="herobox" width="100%" height="580px">             
+              <div class="hero-description">
+              <img src="https://i.postimg.cc/qMyM1j1r/Winstanely-Recovered.png" alt="" class="welcome" >
+          <!--   <p class="hero-title"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  WELCOME TO THE OFFICAL WEBSITE <br> <p class="hero-title2"> WINSTANLEY WIZARDS </p> <br>   <p class="hero-title3">TABLE TENNIS CLUB </p> </p>  --> 
+              </div>
+              
+            </div>
+       </section>
+
+       <section class="about-box">
+       <div class="about">                
+       <p class="atext" ><strong> Winstanley Wizards Table Tennis Club </strong> is open all year round for adults and juniors, holding “pay and play" sessions in a friendly and lively atmosphere. <u>No booking or experience is required.</u> <br/> <br/> <b>Come along and play for fun</b>, improve your standards with some coaching, or play for us in the local league. We provide the table tennis bats for those that require them</p>       
+       </div>
+       </section>
+       
+       <section class="gallery-box"></section>
+              <div class="gallery">
+                     
+                     <h1 class="imgh">Gallery</h1>
+                     <p class="imgp">Pictures from our past events and coaching sessions</p>
+
+                     <div class="images">                       
+                            <img src="https://i.postimg.cc/CM7jFgv7/Screenshot-2022-05-27-230148.png" alt="tabletennis" class="img1">
+                            <img src="https://i.postimg.cc/mkNDSCDM/120746268-1351165191890913-8773420167322361816-n.jpg" alt="tabletennis" class="img2">
+                            <img src="https://i.postimg.cc/mDtGtRY9/Screenshot-2022-05-27-230119.png " alt="tabletennis" class="img3">
+                     </div>
+              </div>
+       </section>
+
+       <section class="map-box">
+
+              <div class="location">
+                     <div class="gmap_canvas">
+                            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=The%20Winstanley%20School%20Kingsway%20N,%20Braunstone%20Town,%20Leicester%20LE3%203BD,%20United%20Kingdom&t=&z=13&ie=UTF8&iwloc=&output=embed" alt="Winstanley Wizards location: The Winstanley School Kingsway N, Braunstone Town, Leicester LE3 3BD, United Kingdom"frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            </iframe>      
+                     </div>
+              </div>
+
+       </section>
+  
+</body>
+
+<footer>
+       <div class="foot-container">
+              
+              <a href="Index.html"><img src="https://i.postimg.cc/jq6wrz2q/Group-3-2x.png" alt="Winstanley Wizards" class="f-logo" height="50px" width="144px"></a>        
+                <ul>                  
+                  <li><a href="Index.html">Home</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+                  <li><a href="News.html">News</a></li>
+                </ul>
+              
+           
+       </div>
+
+       <p class="f-last">© 2022 WINSTANLEY WIZARDS TABLE TENNIS CLUB® • CREDITS</p>
+</footer>
+
+</html>
