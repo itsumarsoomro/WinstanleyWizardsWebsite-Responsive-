@@ -8,7 +8,7 @@
        <title>Winstanley Wizards</title>
        <style>
            @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
-              *{
+           *{
                      padding: 0%;
                      margin: 0%;
               }
@@ -52,43 +52,6 @@
               font-weight: 500;
               }
 
-              /*
-              header {
-                background: #0a0e1a;
-              }
-              header::after {
-                     content: '';
-                     display: table;
-                     clear: both;
-              }
-
-              .logo {
-                     float: left;
-                     padding: 10px 250px;
-              }
-
-              nav {
-                     float: right;
-              }
-              nav ul {
-                     margin: 0;
-                     padding: 0px 250px;
-                     list-style: none;
-                     display: flex;
-              }
-
-              nav li {
-                     padding: 20px 20px;
-              }
-
-              nav a {
-                     color: white;
-                     text-decoration: none;
-                     text-transform: uppercase;
-                     font-size: 14px;
-              }
-
-       */
               .hero{
                      width: 100%;
                      display: flex;
@@ -281,18 +244,7 @@
               }
 
               @media only screen and (max-width: 1220px ) {
-              .logo{
-                     padding: 10px 50px;
-              }
-              nav ul {
-              margin: 0;
-              padding: 0px 50px;
-              list-style: none;
-              display: flex;
-              }
-              nav li {
-              padding: 20px 20px;
-              }
+            
               .img1, .img2, .img3{            
               width: 380px;
               height: 220px;
@@ -351,16 +303,41 @@
               }
               }
 
-              @media only screen and (max-width: 904px) {
-              .logo{
-              padding: 10px 30px;
+              @media only screen and (max-width: 968px) {
+                     .container{
+                     display: flex;
+                     flex-wrap: wrap;
+                     }
+                     nav li{
+                            margin-left: 30px;
+                            margin-right: 30px;
+                     }
+                     .footer{
+                            height: 250px ;
+                     }
+                     .foot-container{
+                            display: flex;
+                     flex-wrap: wrap; 
+                     
+                     }
+                     
+                     footer li {
+                            padding: 20px 0px;
+                            font-weight: 100;
+                            margin-left: 20px;
+                            margin-right: 20px;
+                     }
+                     .f-last{
+                     margin: 10px;
+                     font-size: 10px;
+                     padding-top: 60px;
+
+                     }
+                   
+           
               }
-              nav ul {
-              margin: 0;
-              padding: 0px 30px;
-              list-style: none;
-              display: flex;
-              }    
+              @media only screen and (max-width: 904px) {
+           
               .welcome{
               height: 150px; 
               width: 500px
@@ -400,25 +377,7 @@
               }
 
               @media only screen and (max-width: 859px) {
-              .logo{
-              padding: 10px 15px;
-              }
-              nav ul {
-              margin: 0;
-              padding: 23px 0px;
-              list-style: none;
-              display: flex;
-             
-              }  
-              nav li {
-              display: inline-block;
-              margin-left: 70px;
-              position: relative;
-              padding: 0px 0px;
-              }
-              nav a{
-                     padding: 0px 0px;
-              }
+           
               .atext {
                      width: 370px;
                      font-size: 18px;
@@ -431,9 +390,7 @@
               .imgh{
                      padding-top: 80px;
               }
-              .imgp{
-                     padding-bottom: 20px;
-              }
+            
              
               .img1, .img2, .img3{            
               width: 400px;
@@ -451,20 +408,7 @@
                      width: 670px;
                      height: 300px;
               }
-              footer li {
-              display: inline-block;
-              margin-left: 20px;
-              padding-top: 15px;
-              position: relative;
-              }
-
-              footer a {
-              color: white;
-              text-decoration: none;
-              text-transform: uppercase;
-              font-size: 16px;
-              font-weight: 500;
-              }
+            
               }
               @media only screen and (max-width: 800px) {
                      .gallery{
@@ -472,21 +416,17 @@
                      }
               }
               @media only screen and (max-width: 695px) {
-              nav ul {
-              margin: 0;
-              padding: 23px 10px;
-              list-style: none;
-              display: flex;
-              }
-              nav li {
-              display: inline-block;
-              margin-left: 70px;
-              position: relative;
-              padding: 0px 0px;
-              }
-              .logo{
-                     padding: 10px 15px;
-              }
+                     nav ul{
+                            padding: 0px 0px;
+                     }
+                     .foot-container{
+                            display: flex;
+                     flex-wrap: wrap; 
+                     
+                     }
+                     footer ul{
+                            padding: 0 30px;
+                     }
               .atext{
                      font-size: 16px;
               }
@@ -506,36 +446,18 @@
               .m-des{
                      font-size: 12px;
               }
+
+              .f-last{
+                     margin: 1px;
+                     font-size: 7px;
+                     padding-top: 5px;
+                     }
               }
 
+           
 
               @media only screen and (max-width: 570px) {
-              header{
-              position: relative;
-              height: 120px;
-              }
-              nav ul{
-              position: absolute;
-              top: 75%;
-              left: 50%;
-              transform: translate(-58%, -55%);
-              padding: 0px 0px;
-              justify-content: space-evenly;
-              }
-              nav a{
-              font-size: 16px;
-              font-weight: 500;
-              }
-             img.logo{
-              position: absolute;
-              top: 35%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              padding: 20px 0px;
-
-              width: 150px;
-              height: 50px;
-             }  
+             
               .herobox{
               width: 100%;
               height: 480px;
@@ -556,9 +478,7 @@
               .imgh{
               padding-top: 80px;
               }
-              .imgp{
-              padding-bottom: 20px;
-              }
+            
              
               .img1, .img2, .img3{            
               width: 410px;
@@ -585,20 +505,7 @@
                      display: flex;
                      flex-wrap: wrap;
               }
-              footer li {
-              display: inline-block;
-              margin-left: 20px;
-              padding-top: 15px;
-              position: relative;
-              }
-
-              footer a {
-              color: white;
-              text-decoration: none;
-              text-transform: uppercase;
-              font-size: 13px;
-              font-weight: 500;
-                     }
+          
               }
              
               @media only screen and (max-width: 515px) {
@@ -622,12 +529,22 @@
                      margin-top: 40px;
               }
               }
-          
+              @media only screen and (max-width: 489px) {
+              nav li{
+                     margin-left: 15px;
+                     margin-right: 15px;
+              }
+              footer ul{
+                     padding: 0px 0px;
+              }
+              }
               @media only screen and (max-width: 483px) {
              
              .welcome{
-              width: 350px;
-              height: 160px;
+              width: 320px;
+              height: 135px;
+              color: white;
+              background-blend-mode: multiply;
              }
             
              .herobox{
@@ -647,7 +564,7 @@
               padding-top: 5px;
               font-size: 15px;
               font-weight: 100;
-             
+              padding: 5px 10px;
        
              }
              .img1{
@@ -689,15 +606,21 @@
                      display: flex;
                      flex-wrap: wrap;
               }
-              .f-last{
+         
+              
+              }
+              
+              @media only screen and (max-width: 425px) {
+              nav li{
+                     margin-left: 12px;
+                     margin-right: 12px;
+              }
+              footer li{
+                     margin-left: 12px;
+                     margin-right: 12px;
+              }
+              }
 
-                     font-size: 7px;
-                     padding-top: 0px;
-                     
-              }
-              
-              }
-              
               @media only screen and (max-width: 390px){
                      .herobox{
                             height: 450px;
@@ -707,8 +630,9 @@
                             height: 130px;
                      }
                      .imgp{
-                            font-size: 14px;
+                            font-size: 15px;
                             font-weight: 100;
+                            padding: 5px 10px;
                      }
                      iframe{
                             width: 320px;
@@ -721,7 +645,7 @@
                             width: 300px;
                      }
               }
-              @media only screen and (max-width: 365px){
+              @media only screen and (max-width: 369px){
                      .herobox{
                             height: 450px;
                      }
@@ -753,7 +677,22 @@
                             height: 160px;
                      }
                      .f-last{
-                            padding-top: 35;
+                            display: flex;
+                            flex-wrap: wrap;
+                          
+                            padding-top: 30;
+                            padding-left: 0px;
+                            padding-right: 0px;
+                            margin: 0px;
+                            justify-content: space-around;
+                     }
+                     nav li{
+                     margin-left: 10px;
+                     margin-right: 10px;
+                     }
+                     footer li{
+                     margin-left: 9px;
+                     margin-right: 9px;
                      }
                     
               }
