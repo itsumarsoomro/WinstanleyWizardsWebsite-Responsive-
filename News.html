@@ -16,6 +16,7 @@
     * {
       padding: 0%;
       margin: 0%;
+      user-select: none;
     }
     body {
       margin: 0;
@@ -23,7 +24,23 @@
       font-weight: 800;
       overflow-x: hidden;
     }
+    #myBtn {
+      display: none; /* Hidden by default */
+      position: fixed; /* Fixed/sticky position */
+      bottom: 20px; /* Place the button at the bottom of the page */
+      right: 30px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: none; /* Remove borders */
+      outline: none; /* Remove outline */
+      background-color: red; /* Set a background color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 8px 8px; /* Some padding */
+      border-radius: 60px; /* Rounded corners */
+    }
 
+    #myBtn:hover {
+      background-color: #555; /* Add a dark-grey background on hover */
+    }
     header {
       background-color: #0a0e1a;
       width: 100%;
@@ -54,8 +71,15 @@
       text-transform: uppercase;
       font-size: 16px;
       font-weight: 500;
+      transition: 500ms ease-out;
     }
-
+    nav a:hover {
+      padding: 10px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      border-style: none;
+      background-color: #333;
+    }
     .hero-container {
       display: flex;
       position: relative;
@@ -298,6 +322,34 @@
       }
     }
   </style>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <img
+      src="https://i.postimg.cc/mZQqQtPc/up-arrow.png"
+      alt="Top"
+      height="32"
+      width="32"
+    />
+  </button>
+
+  <header>
+    <div class="container">
+      <a href="Index.html"
+        ><img
+          src="https://i.postimg.cc/jq6wrz2q/Group-3-2x.png"
+          alt="logo"
+          class="logo"
+          height="50px"
+          width="144px"
+      /></a>
+      <nav>
+        <ul>
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="News.html">News</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <body>
     <div id="fb-root"></div>
@@ -308,26 +360,6 @@
       src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0"
       nonce="XV5tuVel"
     ></script>
-
-    <header>
-      <div class="container">
-        <a href="Index.html"
-          ><img
-            src="https://i.postimg.cc/jq6wrz2q/Group-3-2x.png"
-            alt="logo"
-            class="logo"
-            height="50px"
-            width="144px"
-        /></a>
-        <nav>
-          <ul>
-            <li><a href="Index.html">Home</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><a href="News.html">News</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
 
     <section>
       <div class="hero-container">
@@ -369,32 +401,59 @@
         >
       </div>
     </section>
-
-    <footer>
-      <div class="foot-container">
-        <a href="Index.html"
-          ><img
-            src="https://i.postimg.cc/jq6wrz2q/Group-3-2x.png"
-            alt="Winstanley Wizards"
-            class="f-logo"
-            height="50px"
-            width="144px"
-        /></a>
-        <ul>
-          <li><a href="Index.html">Home</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          <li><a href="News.html">News</a></li>
-          <li><a href="Credits.html">Credits</a></li>
-        </ul>
-      </div>
-
-      <p class="f-last">
-        Copyright &copy;
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        WINSTANLEY WIZARDS TABLE TENNIS CLUB All Rights Reserved
-      </p>
-    </footer>
   </body>
+
+  <footer>
+    <div class="foot-container">
+      <a href="Index.html"
+        ><img
+          src="https://i.postimg.cc/jq6wrz2q/Group-3-2x.png"
+          alt="Winstanley Wizards"
+          class="f-logo"
+          height="50px"
+          width="144px"
+      /></a>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="News.html">News</a></li>
+        <li><a href="Credits.html">Credits</a></li>
+      </ul>
+    </div>
+
+    <p class="f-last">
+      Copyright &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      WINSTANLEY WIZARDS TABLE TENNIS CLUB All Rights Reserved
+    </p>
+  </footer>
+
+  <script>
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
 </html>

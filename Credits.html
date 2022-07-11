@@ -20,6 +20,7 @@
     * {
       padding: 0%;
       margin: 0%;
+      user-select: none;
     }
     body {
       margin: 0;
@@ -58,8 +59,15 @@
       text-transform: uppercase;
       font-size: 16px;
       font-weight: 500;
+      transition: 500ms ease-out;
     }
-
+    nav a:hover {
+      padding: 10px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      border-style: none;
+      background-color: #333;
+    }
     footer {
       background-color: #0a0e1a;
       height: 250px;

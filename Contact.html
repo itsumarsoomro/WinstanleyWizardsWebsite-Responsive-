@@ -10,272 +10,306 @@
       href="https://i.postimg.cc/gJK6QyyS/Group-4.png"
     />
     <title>Contact</title>
-  </head>
 
-  <style>
-    * {
-      padding: 0%;
-      margin: 0%;
-    }
-    body {
-      margin: 0;
-      font-family: "Work Sans", sans-serif;
-      font-weight: 800;
-      overflow-x: hidden;
-    }
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        user-select: none;
+      }
+      body {
+        margin: 0;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 800;
+        overflow-x: hidden;
+      }
+      #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: red; /* Set a background color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 8px 8px; /* Some padding */
+        border-radius: 60px; /* Rounded corners */
+      }
 
-    header {
-      background-color: #0a0e1a;
-      width: 100%;
-    }
-    .container {
-      display: flex;
-      justify-content: space-around;
-    }
-    .logo {
-      padding: 10px 0px;
-    }
-    nav ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
+      #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+      }
+      header {
+        background-color: #0a0e1a;
+        width: 100%;
+      }
+      .container {
+        display: flex;
+        justify-content: space-around;
+      }
 
-    nav li {
-      display: inline-block;
-      margin-left: 70px;
-      padding-top: 23px;
-      position: relative;
-    }
+      .logo {
+        padding: 10px 0px;
+      }
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 16px;
-      font-weight: 500;
-    }
+      nav li {
+        display: inline-block;
+        margin-left: 70px;
+        padding-top: 25px;
+        position: relative;
+      }
 
-    .hero-container {
-      display: flex;
-      position: relative;
-    }
-    .heroimg {
-      height: 400px;
-      width: 100%;
-      object-fit: cover;
-    }
-    .herotitle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      nav a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 500;
+        transition: 500ms ease-out;
+      }
+      nav a:hover {
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        border-style: none;
+        background-color: #333;
+      }
+      .hero-container {
+        display: flex;
+        position: relative;
+      }
+      .heroimg {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+      }
+      .herotitle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-      text-shadow: -3px 4px 11px black;
+        text-shadow: -3px 4px 11px black;
 
-      color: white;
-      font-size: 60px;
-      font-weight: 500;
-      font-family: sans-serif;
-    }
+        color: white;
+        font-size: 60px;
+        font-weight: 500;
+        font-family: sans-serif;
+      }
 
-    .contact-container {
-      padding: 76px 20px;
-      text-align: left;
-    }
-    .contact-box {
-      position: relative;
-    }
-    h2 {
-      font-size: 30px;
-      text-underline-offset: 5px;
-      padding-bottom: 10px;
-      text-decoration: underline;
-      text-decoration-color: #f56509;
-      text-align: center;
-      color: rgb(17, 17, 17);
-    }
-    p {
-      font-size: 20px;
-      font-weight: 200;
-      text-align: center;
-      color: #1b1b1b;
-    }
+      .contact-container {
+        padding: 76px 20px;
+        text-align: left;
+      }
+      .contact-box {
+        position: relative;
+      }
+      h2 {
+        font-size: 30px;
+        text-underline-offset: 5px;
+        padding-bottom: 10px;
+        text-decoration: underline;
+        text-decoration-color: #f56509;
+        text-align: center;
+        color: rgb(17, 17, 17);
+      }
+      p {
+        font-size: 20px;
+        font-weight: 200;
+        text-align: center;
+        color: #1b1b1b;
+      }
 
-    a {
-      font-size: 20px;
-      font-weight: 200;
-      text-align: center;
-      color: #1b1b1b;
-      text-decoration: none;
-    }
+      a {
+        font-size: 20px;
+        font-weight: 200;
+        text-align: center;
+        color: #1b1b1b;
+        text-decoration: none;
+      }
 
-    footer {
-      background-color: #0a0e1a;
-      height: 250px;
-      width: 100%;
-    }
-    .foot-container {
-      display: flex;
-      justify-content: space-around;
-      padding-top: 80px;
-    }
+      footer {
+        background-color: #0a0e1a;
+        height: 250px;
+        width: 100%;
+      }
+      .foot-container {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 80px;
+      }
 
-    footer ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
+      footer ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
 
-    footer li {
-      display: inline-block;
-      margin-left: 70px;
-      padding-top: 23px;
-      position: relative;
-    }
+      footer li {
+        display: inline-block;
+        margin-left: 70px;
+        padding-top: 23px;
+        position: relative;
+      }
 
-    footer a {
-      color: white;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 16px;
-      font-weight: 100;
-    }
+      footer a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 100;
+      }
 
-    /*
+      /*
               footer a:hover {
               color: skyblue;
               font-size: 20px;
               cursor: pointer;
               }*/
 
-    .f-last {
-      text-align: center;
-      color: white;
-      margin-top: 50px;
-      padding: 20px 10px;
-      font-size: 12px;
-      font-weight: 100;
-    }
-    @media only screen and (max-width: 1415px) {
-      nav ul {
-        margin: 0;
-        padding: 0px 70px;
-        list-style: none;
-        display: flex;
-      }
-
-      nav li {
-        padding: 20px 20px;
-      }
-      .logo {
-        padding: 10px 70px;
-      }
-    }
-
-    @media only screen and (max-width: 968px) {
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      nav li {
-        margin-left: 30px;
-        margin-right: 30px;
-      }
-      .footer {
-        height: 250px;
-      }
-      .foot-container {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      footer li {
-        padding: 20px 0px;
-        font-weight: 100;
-        margin-left: 20px;
-        margin-right: 20px;
-      }
       .f-last {
-        margin: 10px;
-        font-size: 10px;
-        padding-top: 60px;
-      }
-    }
-    @media only screen and (max-width: 619px) {
-      .f-last {
-        margin: 1px;
-        font-size: 7px;
-        padding-top: 5px;
-      }
-    }
-    @media only screen and (max-width: 695px) {
-      nav ul {
-        padding: 0px 0px;
-      }
-      .foot-container {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      footer ul {
-        padding: 0 30px;
-      }
-    }
-    @media only screen and (max-width: 489px) {
-      nav li {
-        margin-left: 15px;
-        margin-right: 15px;
-      }
-      footer ul {
-        padding: 0px 0px;
-      }
-    }
-    @media only screen and (max-width: 425px) {
-      nav li {
-        margin-left: 12px;
-        margin-right: 12px;
-      }
-      footer li {
-        margin-left: 12px;
-        margin-right: 12px;
-      }
-    }
-    @media only screen and (max-width: 369px) {
-      .f-last {
-        display: flex;
-        flex-wrap: wrap;
-
-        padding-top: 30;
-        padding-left: 0px;
-        padding-right: 0px;
-        margin: 0px;
-        justify-content: space-around;
-      }
-      nav li {
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-      footer li {
-        margin-left: 9px;
-        margin-right: 9px;
-      }
-    }
-
-    @media only screen and (max-width: 355px) {
-      nav li {
+        text-align: center;
+        color: white;
+        margin-top: 50px;
         padding: 20px 10px;
-        margin-left: 5px;
-        margin-right: 5px;
+        font-size: 12px;
+        font-weight: 100;
+      }
+      @media only screen and (max-width: 1415px) {
+        nav ul {
+          margin: 0;
+          padding: 0px 70px;
+          list-style: none;
+          display: flex;
+        }
+
+        nav li {
+          padding: 20px 20px;
+        }
+        .logo {
+          padding: 10px 70px;
+        }
       }
 
-      footer li {
-        margin: 5px;
+      @media only screen and (max-width: 968px) {
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        nav li {
+          margin-left: 30px;
+          margin-right: 30px;
+        }
+        .footer {
+          height: 250px;
+        }
+        .foot-container {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        footer li {
+          padding: 20px 0px;
+          font-weight: 100;
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+        .f-last {
+          margin: 10px;
+          font-size: 10px;
+          padding-top: 60px;
+        }
       }
-      .f-last {
-        padding-top: 25px;
+      @media only screen and (max-width: 619px) {
+        .f-last {
+          margin: 1px;
+          font-size: 7px;
+          padding-top: 5px;
+        }
       }
-    }
-  </style>
+      @media only screen and (max-width: 695px) {
+        nav ul {
+          padding: 0px 0px;
+        }
+        .foot-container {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        footer ul {
+          padding: 0 30px;
+        }
+      }
+      @media only screen and (max-width: 489px) {
+        nav li {
+          margin-left: 15px;
+          margin-right: 15px;
+        }
+        footer ul {
+          padding: 0px 0px;
+        }
+      }
+      @media only screen and (max-width: 425px) {
+        nav li {
+          margin-left: 12px;
+          margin-right: 12px;
+        }
+        footer li {
+          margin-left: 12px;
+          margin-right: 12px;
+        }
+      }
+      @media only screen and (max-width: 369px) {
+        .f-last {
+          display: flex;
+          flex-wrap: wrap;
+
+          padding-top: 30;
+          padding-left: 0px;
+          padding-right: 0px;
+          margin: 0px;
+          justify-content: space-around;
+        }
+        nav li {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+        footer li {
+          margin-left: 9px;
+          margin-right: 9px;
+        }
+      }
+
+      @media only screen and (max-width: 355px) {
+        nav li {
+          padding: 20px 10px;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+
+        footer li {
+          margin: 5px;
+        }
+        .f-last {
+          padding-top: 25px;
+        }
+      }
+    </style>
+  </head>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <img
+      src="https://i.postimg.cc/mZQqQtPc/up-arrow.png"
+      alt="Top"
+      height="32"
+      width="32"
+    />
+  </button>
 
   <header>
     <div class="container">
@@ -287,6 +321,7 @@
           height="50px"
           width="144px"
       /></a>
+
       <nav>
         <ul>
           <li><a href="Index.html">Home</a></li>
@@ -416,4 +451,31 @@
       WINSTANLEY WIZARDS TABLE TENNIS CLUB All Rights Reserved
     </p>
   </footer>
+
+  <script>
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
 </html>
