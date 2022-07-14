@@ -28,18 +28,20 @@
         display: none; /* Hidden by default */
         position: fixed; /* Fixed/sticky position */
         bottom: 20px; /* Place the button at the bottom of the page */
-        right: 30px; /* Place the button 30px from the right */
+        right: 20px; /* Place the button 30px from the right */
         z-index: 99; /* Make sure it does not overlap */
         border: none; /* Remove borders */
         outline: none; /* Remove outline */
         background-color: red; /* Set a background color */
         cursor: pointer; /* Add a mouse pointer on hover */
-        padding: 8px 8px; /* Some padding */
-        border-radius: 60px; /* Rounded corners */
+        padding: 2px 5px; /* Some padding */
+        border-radius: 100px; /* Rounded corners */
+        transition: 200ms ease-in-out;
       }
 
       #myBtn:hover {
         background-color: #555; /* Add a dark-grey background on hover */
+        padding: 7px 10px; /* Some padding */
       }
 
       header {
@@ -73,7 +75,7 @@
         text-transform: uppercase;
         font-size: 16px;
         font-weight: 500;
-        transition: 500ms ease-out;
+        transition: 500ms ease-in-out;
       }
 
       nav a:hover {
@@ -157,7 +159,7 @@
         margin-bottom: 40px;
         cursor: pointer;
         border-radius: 20px;
-        transition: 490ms ease-out;
+        transition: 550ms ease-out;
       }
       .images > img:hover {
         height: 280px;
@@ -774,7 +776,7 @@
 
   <button onclick="topFunction()" id="myBtn" title="Go to top">
     <img
-      src="https://i.postimg.cc/mZQqQtPc/up-arrow.png"
+      src="https://i.postimg.cc/P5mCxGqz/4781853-arrow-arrows-direction-down-move-icon.png"
       alt="Top"
       height="32"
       width="32"
