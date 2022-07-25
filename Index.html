@@ -35,11 +35,16 @@
         background-color: red; /* Set a background color */
         cursor: pointer; /* Add a mouse pointer on hover */
         padding: 2px 5px; /* Some padding */
+        height: 40px;
         border-radius: 100px; /* Rounded corners */
-        transition: 200ms ease-in-out;
+        transition: 200ms ease;
+        box-shadow: -1px 5px 24px -10px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -1px 5px 24px -10px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 5px 24px -10px rgba(0, 0, 0, 0.75);
       }
 
       #myBtn:hover {
+        height: 50px;
         background-color: #555; /* Add a dark-grey background on hover */
         padding: 7px 10px; /* Some padding */
       }
@@ -75,14 +80,14 @@
         text-transform: uppercase;
         font-size: 16px;
         font-weight: 500;
-        transition: 500ms ease-in-out;
+        transition: 500ms ease;
       }
 
       nav a:hover {
         padding: 10px 20px;
         border-radius: 50px;
-        text-decoration: none;
-        border-style: none;
+
+        color: dodgerblue;
         background-color: #333;
       }
 
@@ -115,7 +120,11 @@
       }
       .about {
         position: relative;
-        background: #0063b5;
+        background-image: linear-gradient(
+          96.5deg,
+          rgba(39, 103, 187, 1) 10.4%,
+          rgba(16, 72, 144, 1) 87.7%
+        );
         color: white;
         text-align: left;
         height: 300px;
@@ -132,16 +141,18 @@
       }
       .gallery {
         width: 100%;
-        height: 500px;
+        height: 370px;
         background-color: #191e23;
         color: white;
+        padding: 80px 0px;
       }
       .imgh {
         text-align: center;
-        padding-top: 80px;
+        font-size: 34px;
       }
       .imgp {
         text-align: center;
+        font-weight: 500;
       }
       .images {
         display: flex;
@@ -156,10 +167,14 @@
         height: 250px;
         padding: 0px 0px;
         margin-top: 40px;
-        margin-bottom: 40px;
+
         cursor: pointer;
         border-radius: 20px;
-        transition: 550ms ease-out;
+        transition: 550ms ease;
+
+        box-shadow: -1px 5px 24px 1px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -1px 5px 24px 1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 5px 24px 1px rgba(0, 0, 0, 0.75);
       }
       .images > img:hover {
         height: 280px;
@@ -168,7 +183,7 @@
       .map-box {
         width: 100%;
         height: 600px;
-        background-color: white;
+        background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
       }
       .map-box {
         position: relative;
@@ -184,16 +199,17 @@
       }
       .m-des {
         padding: 30px;
-        color: #333;
+        color: rgb(0, 0, 0);
         font-size: small;
+        font-weight: 500;
       }
       iframe {
-        width: 1000px;
+        width: 1009px;
         height: 400px;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -45%);
       }
 
       footer {
@@ -831,8 +847,9 @@
           <u>No booking or experience is required.</u> <br />
           <br />
           <b>Come along and play for fun</b>, improve your standards with some
-          coaching, or play for us in the local league. We provide the table
-          tennis bats for those that require them
+          coaching, or play for us in the The Leicester League and The Junior
+          Leicester Development League for our junior players.. We provide the
+          table tennis bats for those that require them.
         </p>
       </div>
     </section>
@@ -843,7 +860,7 @@
 
       <div class="images">
         <img
-          src="https://i.postimg.cc/CM7jFgv7/Screenshot-2022-05-27-230148.png"
+          src="https://i.postimg.cc/L5njjLcc/website-photo-1.jpg"
           alt="tabletennis"
           class="img1"
         />
@@ -853,7 +870,7 @@
           class="img2"
         />
         <img
-          src="https://i.postimg.cc/mDtGtRY9/Screenshot-2022-05-27-230119.png "
+          src="https://i.postimg.cc/nLFjvq73/siluetas-de-ping-pong-negras-jugadores-con-fondo-blanco-191934651.jpg"
           alt="tabletennis"
           class="img3"
         />
