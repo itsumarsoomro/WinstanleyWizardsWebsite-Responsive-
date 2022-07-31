@@ -118,26 +118,36 @@
         height: 200px;
         width: 700px;
       }
+
       .about {
+        display: flex;
         position: relative;
+        justify-content: space-evenly;
+
         background-image: linear-gradient(
           96.5deg,
           rgba(39, 103, 187, 1) 10.4%,
           rgba(16, 72, 144, 1) 87.7%
         );
+
         color: white;
         text-align: left;
-        height: 300px;
+        height: 350px;
         width: 100%;
       }
+      .abtimg {
+        height: 200px;
+        width: 330px;
+        border-radius: 20px;
+        margin: 80px 0px;
+        background-size: cover;
+      }
       .atext {
+        width: 700px;
         font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         font-weight: 500;
         text-align: left;
+        margin: 80px 0px;
       }
       .gallery {
         width: 100%;
@@ -266,7 +276,17 @@
           list-style: none;
           display: flex;
         }
-
+        .about {
+          height: 400px;
+        }
+        .abtimg {
+          margin: 100px 0px;
+          height: 200px;
+          width: 300px;
+        }
+        .atext {
+          width: 500px;
+        }
         nav li {
           padding: 20px 20px;
         }
@@ -307,10 +327,24 @@
       }
 
       @media only screen and (max-width: 1190px) {
+        .about {
+          height: 860px;
+          flex-direction: column;
+        }
+        .atext {
+          margin: auto;
+
+          width: 700px;
+        }
+        .abtimg {
+          margin: auto;
+          width: 400px;
+          height: 230px;
+          padding: 0px 0px;
+        }
         .gallery {
           width: 100%;
           height: 770px;
-
           background-color: #191e23;
           color: white;
         }
@@ -334,7 +368,6 @@
         .imgp {
           padding-bottom: 20px;
         }
-
         .img1,
         .img2,
         .img3 {
@@ -422,9 +455,12 @@
       }
 
       @media only screen and (max-width: 859px) {
+        .about {
+          height: 940px;
+        }
         .atext {
           width: 370px;
-          font-size: 18px;
+          font-size: 20px;
           font-weight: 100;
         }
         .gallery {
@@ -473,7 +509,7 @@
           padding: 0 30px;
         }
         .atext {
-          font-size: 16px;
+          font-size: 20px;
         }
         iframe {
           width: 500px;
@@ -516,7 +552,7 @@
         }
         .atext {
           width: 370px;
-          font-size: 17px;
+          font-size: 20px;
           font-weight: 100;
         }
         .gallery {
@@ -596,8 +632,8 @@
           font-weight: 500;
         }
         .welcome {
-          width: 320px;
-          height: 128px;
+          width: 400px;
+          height: 160px;
           color: white;
           background-blend-mode: multiply;
         }
@@ -607,8 +643,8 @@
         }
 
         .atext {
-          width: 300px;
-          font-size: 16px;
+          width: 400px;
+          font-size: 20px;
           font-weight: 100;
         }
         .imgh {
@@ -626,14 +662,14 @@
         .img1,
         .img2,
         .img3 {
-          width: 330px;
-          height: 210px;
+          width: 370px;
+          height: 220px;
           padding-top: 10px;
           padding: 0px 0px;
           cursor: pointer;
         }
         .gallery {
-          height: 870px;
+          height: 830px;
         }
         iframe {
           margin-top: 50px;
@@ -646,22 +682,39 @@
         .map-title {
           display: flex;
           flex-wrap: wrap;
+          height: 144px;
         }
+
         .m-title {
           font-size: 20px;
           margin-top: 40px;
-          padding: 0px 0%;
+          padding: 0px;
         }
         .m-des {
-          padding: 0px 50px;
+          padding: 0px;
         }
+
         div.foot-container {
           padding-top: 70px;
           display: flex;
           flex-wrap: wrap;
         }
       }
-
+      @media only screen and (max-width: 447px) {
+        .welcome {
+          width: 360px;
+          height: 150px;
+          color: white;
+          background-blend-mode: multiply;
+        }
+        .abtimg {
+          width: 360px;
+          height: 230px;
+        }
+        .atext {
+          width: 360px;
+        }
+      }
       @media only screen and (max-width: 425px) {
         nav li {
           margin-left: 12px;
@@ -671,7 +724,7 @@
           font-weight: 500;
         }
         .about {
-          height: 330px;
+          height: 940px;
         }
         footer li {
           margin-left: 12px;
@@ -690,9 +743,7 @@
           width: 330px;
           height: 148px;
         }
-        .about {
-          height: 330px;
-        }
+
         .gallery {
           padding: 30px 0px;
         }
@@ -849,6 +900,10 @@
 
     <section class="about-box">
       <div class="about">
+        <img
+          class="abtimg abtimg--1"
+          src="https://i.postimg.cc/0NdLYJ59/Screenshot-2022-05-27-230119.png"
+        />
         <p class="atext">
           <strong> Winstanley Wizards Table Tennis Club </strong> is open all
           year round for adults and juniors, holding “pay and play" sessions in
@@ -860,6 +915,10 @@
           Leicester Development League for our junior players.. We provide the
           table tennis bats for those that require them.
         </p>
+        <img
+          class="abtimg abtimg--2"
+          src="https://i.postimg.cc/gk1FmWBb/Screenshot-2022-05-27-230148.png"
+        />
       </div>
     </section>
 
@@ -891,6 +950,7 @@
         <div class="m-title">
           <h1>WHERE TO FIND US</h1>
         </div>
+
         <div class="m-des">
           <h1>The Winstanley School</h1>
           <p style="font-weight: 10px; color: #696969">
