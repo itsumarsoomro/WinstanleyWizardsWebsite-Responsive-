@@ -140,7 +140,8 @@
         width: 330px;
         border-radius: 20px;
         margin: 80px 0px;
-        background-size: cover;
+        /* background-size: cover; */
+        object-fit: cover;
       }
       .atext {
         width: 700px;
@@ -402,7 +403,7 @@
         }
 
         footer li {
-          padding: 20px 0px;
+          padding: 10px 0px;
           font-weight: 100;
           margin-left: 20px;
           margin-right: 20px;
@@ -535,7 +536,7 @@
         .f-last {
           margin: 1px;
           font-size: 7px;
-          padding-top: 5px;
+          padding-top: 35px;
         }
       }
       @media only screen and (max-width: 570px) {
@@ -584,8 +585,8 @@
         .map-box {
           height: 450px;
         }
-        div.foot-container {
-          padding-top: 70px;
+        .foot-container {
+          padding-top: 50px;
           display: flex;
           flex-wrap: wrap;
         }
@@ -662,50 +663,46 @@
         .img1,
         .img2,
         .img3 {
-          width: 370px;
-          height: 220px;
+          width: 360px;
+          height: 230px;
           padding-top: 10px;
           padding: 0px 0px;
           cursor: pointer;
         }
         .gallery {
-          height: 830px;
+          height: 878px;
         }
         iframe {
-          margin-top: 50px;
-          width: 330px;
-          height: 220px;
+          margin-top: 30px;
+          width: 360px;
+          height: 230px;
         }
         .map-box {
-          height: 430px;
+          height: 415px;
         }
         .map-title {
           display: flex;
           flex-wrap: wrap;
-          height: 144px;
+          height: 129px;
         }
 
         .m-title {
           font-size: 20px;
           margin-top: 40px;
+          margin-bottom: -40px;
           padding: 0px;
         }
         .m-des {
           padding: 0px;
-        }
-
-        div.foot-container {
-          padding-top: 70px;
-          display: flex;
-          flex-wrap: wrap;
+          margin-bottom: -40px;
         }
       }
       @media only screen and (max-width: 447px) {
         .welcome {
           width: 360px;
-          height: 150px;
+          height: 165px;
           color: white;
-          background-blend-mode: multiply;
+          object-fit: fill;
         }
         .abtimg {
           width: 360px;
@@ -732,7 +729,7 @@
         }
       }
 
-      @media only screen and (max-width: 394px) {
+      @media only screen and (max-width: 398px) {
         nav a {
           font-weight: 500;
         }
@@ -743,9 +740,25 @@
           width: 330px;
           height: 148px;
         }
-
+        .atext {
+          width: 330px;
+        }
+        .abtimg {
+          height: 210px;
+          width: 330px;
+        }
         .gallery {
-          padding: 30px 0px;
+          padding: 0px 0px;
+        }
+
+        .img1,
+        .img2,
+        .img3 {
+          height: 210px;
+          width: 330px;
+        }
+        .imgh {
+          padding-top: 30px;
         }
         .imgp {
           font-size: 15px;
@@ -753,8 +766,8 @@
           padding: 5px 10px;
         }
         iframe {
-          width: 320px;
-          height: 160px;
+          width: 330px;
+          height: 210px;
         }
         .m-title {
           margin-left: 10px;
@@ -771,12 +784,18 @@
           height: 450px;
         }
         .welcome {
-          width: 300px;
-          height: 110px;
+          width: 310px;
+          height: 150px;
         }
 
         .atext {
-          font-size: 15.5px;
+          font-size: 20px;
+          width: 310px;
+        }
+
+        .abtimg {
+          height: 200px;
+          width: 310px;
         }
         .imgp {
           font-size: 15px;
@@ -785,7 +804,7 @@
         .img1,
         .img2,
         .img3 {
-          width: 300px;
+          width: 310px;
           height: 199px;
           padding: 0px 0px;
           margin-top: 20px;
@@ -830,11 +849,11 @@
           font-weight: 500;
         }
         img.welcome {
-          height: 110px;
-          width: 295px;
+          height: 140px;
+          width: 310px;
         }
         .herobox {
-          height: 390px;
+          height: 420px;
         }
         .atext {
           width: 280px;
