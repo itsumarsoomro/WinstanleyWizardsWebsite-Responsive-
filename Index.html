@@ -28,25 +28,18 @@
         display: none; /* Hidden by default */
         position: fixed; /* Fixed/sticky position */
         bottom: 20px; /* Place the button at the bottom of the page */
-        right: 20px; /* Place the button 30px from the right */
+        right: 30px; /* Place the button 30px from the right */
         z-index: 99; /* Make sure it does not overlap */
         border: none; /* Remove borders */
         outline: none; /* Remove outline */
         background-color: red; /* Set a background color */
         cursor: pointer; /* Add a mouse pointer on hover */
-        padding: 2px 5px; /* Some padding */
-        height: 40px;
-        border-radius: 100px; /* Rounded corners */
-        transition: 200ms ease;
-        box-shadow: -1px 5px 24px -10px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: -1px 5px 24px -10px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: -1px 5px 24px -10px rgba(0, 0, 0, 0.75);
+        padding: 8px 8px; /* Some padding */
+        border-radius: 70px; /* Rounded corners */
       }
 
       #myBtn:hover {
-        height: 50px;
         background-color: #555; /* Add a dark-grey background on hover */
-        padding: 7px 10px; /* Some padding */
       }
 
       header {
@@ -80,14 +73,14 @@
         text-transform: uppercase;
         font-size: 16px;
         font-weight: 500;
-        transition: 500ms ease;
+        transition: 500ms ease-out;
       }
 
       nav a:hover {
         padding: 10px 20px;
         border-radius: 50px;
-
-        color: dodgerblue;
+        text-decoration: none;
+        border-style: none;
         background-color: #333;
       }
 
@@ -102,12 +95,14 @@
 
         object-fit: cover;
       }
+
       .hero > img {
         background-color: #333;
 
         background-blend-mode: multiply;
         background-attachment: fixed;
       }
+
       .hero > div {
         position: absolute;
         top: 50%;
@@ -118,57 +113,35 @@
         height: 200px;
         width: 700px;
       }
-
       .about {
-        display: flex;
         position: relative;
-        justify-content: space-evenly;
-
-        background-image: linear-gradient(
-          96.5deg,
-          rgba(39, 103, 187, 1) 10.4%,
-          rgba(16, 72, 144, 1) 87.7%
-        );
-
+        background: #0063b5;
         color: white;
         text-align: left;
-        height: 350px;
+        height: 300px;
         width: 100%;
       }
-      .abtimg {
-        height: 200px;
-        width: 330px;
-        border-radius: 20px;
-        margin: 80px 0px;
-        /* background-size: cover; */
-        object-fit: cover;
-      }
       .atext {
-        width: 700px;
         font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         font-weight: 500;
         text-align: left;
-        margin: 80px 0px;
       }
       .gallery {
         width: 100%;
-        height: 370px;
+        height: 500px;
         background-color: #191e23;
         color: white;
-        padding: 80px 0px;
       }
       .imgh {
         text-align: center;
-        font-size: 34px;
+        padding-top: 80px;
       }
       .imgp {
         text-align: center;
-        font-weight: 500;
-      }
-      .images {
-        display: flex;
-        position: relative;
-        justify-content: space-around;
       }
 
       .img1,
@@ -178,14 +151,10 @@
         height: 250px;
         padding: 0px 0px;
         margin-top: 40px;
-
+        margin-bottom: 40px;
         cursor: pointer;
         border-radius: 20px;
-        transition: 550ms ease;
-
-        box-shadow: -1px 5px 24px 1px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: -1px 5px 24px 1px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: -1px 5px 24px 1px rgba(0, 0, 0, 0.75);
+        transition: 490ms ease-out;
       }
       .images > img:hover {
         height: 280px;
@@ -194,7 +163,7 @@
       .map-box {
         width: 100%;
         height: 600px;
-        background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+        background-color: white;
       }
       .map-box {
         position: relative;
@@ -210,17 +179,16 @@
       }
       .m-des {
         padding: 30px;
-        color: rgb(0, 0, 0);
+        color: #333;
         font-size: small;
-        font-weight: 500;
       }
       iframe {
-        width: 1009px;
+        width: 1000px;
         height: 400px;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -45%);
+        transform: translate(-50%, -50%);
       }
 
       footer {
@@ -277,17 +245,7 @@
           list-style: none;
           display: flex;
         }
-        .about {
-          height: 400px;
-        }
-        .abtimg {
-          margin: 100px 0px;
-          height: 200px;
-          width: 300px;
-        }
-        .atext {
-          width: 500px;
-        }
+
         nav li {
           padding: 20px 20px;
         }
@@ -328,24 +286,10 @@
       }
 
       @media only screen and (max-width: 1190px) {
-        .about {
-          height: 860px;
-          flex-direction: column;
-        }
-        .atext {
-          margin: auto;
-
-          width: 700px;
-        }
-        .abtimg {
-          margin: auto;
-          width: 400px;
-          height: 230px;
-          padding: 0px 0px;
-        }
         .gallery {
           width: 100%;
           height: 770px;
+
           background-color: #191e23;
           color: white;
         }
@@ -369,6 +313,7 @@
         .imgp {
           padding-bottom: 20px;
         }
+
         .img1,
         .img2,
         .img3 {
@@ -403,7 +348,7 @@
         }
 
         footer li {
-          padding: 10px 0px;
+          padding: 20px 0px;
           font-weight: 100;
           margin-left: 20px;
           margin-right: 20px;
@@ -456,12 +401,9 @@
       }
 
       @media only screen and (max-width: 859px) {
-        .about {
-          height: 940px;
-        }
         .atext {
           width: 370px;
-          font-size: 20px;
+          font-size: 18px;
           font-weight: 100;
         }
         .gallery {
@@ -510,7 +452,7 @@
           padding: 0 30px;
         }
         .atext {
-          font-size: 20px;
+          font-size: 16px;
         }
         iframe {
           width: 500px;
@@ -536,7 +478,7 @@
         .f-last {
           margin: 1px;
           font-size: 7px;
-          padding-top: 35px;
+          padding-top: 5px;
         }
       }
       @media only screen and (max-width: 570px) {
@@ -553,7 +495,7 @@
         }
         .atext {
           width: 370px;
-          font-size: 20px;
+          font-size: 17px;
           font-weight: 100;
         }
         .gallery {
@@ -585,8 +527,8 @@
         .map-box {
           height: 450px;
         }
-        .foot-container {
-          padding-top: 50px;
+        div.foot-container {
+          padding-top: 70px;
           display: flex;
           flex-wrap: wrap;
         }
@@ -633,8 +575,8 @@
           font-weight: 500;
         }
         .welcome {
-          width: 400px;
-          height: 160px;
+          width: 320px;
+          height: 128px;
           color: white;
           background-blend-mode: multiply;
         }
@@ -644,12 +586,12 @@
         }
 
         .atext {
-          width: 400px;
-          font-size: 20px;
+          width: 300px;
+          font-size: 16px;
           font-weight: 100;
         }
         .imgh {
-          padding-top: 0px;
+          padding-top: 40px;
         }
         .imgp {
           padding-top: 5px;
@@ -663,55 +605,43 @@
         .img1,
         .img2,
         .img3 {
-          width: 360px;
-          height: 230px;
+          width: 330px;
+          height: 210px;
           padding-top: 10px;
           padding: 0px 0px;
           cursor: pointer;
         }
         .gallery {
-          height: 878px;
+          height: 900px;
         }
         iframe {
-          margin-top: 30px;
-          width: 360px;
-          height: 230px;
+          margin-top: 50px;
+          width: 330px;
+          height: 220px;
         }
         .map-box {
-          height: 415px;
+          height: 430px;
         }
         .map-title {
           display: flex;
           flex-wrap: wrap;
-          height: 129px;
         }
-
         .m-title {
           font-size: 20px;
           margin-top: 40px;
-          margin-bottom: -40px;
-          padding: 0px;
+          padding: 0px 0%;
         }
         .m-des {
-          padding: 0px;
-          margin-bottom: -40px;
+          padding: 0px 50px;
+          margin-bottom: 40px;
+        }
+        div.foot-container {
+          padding-top: 70px;
+          display: flex;
+          flex-wrap: wrap;
         }
       }
-      @media only screen and (max-width: 447px) {
-        .welcome {
-          width: 360px;
-          height: 165px;
-          color: white;
-          object-fit: fill;
-        }
-        .abtimg {
-          width: 360px;
-          height: 230px;
-        }
-        .atext {
-          width: 360px;
-        }
-      }
+
       @media only screen and (max-width: 425px) {
         nav li {
           margin-left: 12px;
@@ -720,16 +650,13 @@
         nav a {
           font-weight: 500;
         }
-        .about {
-          height: 940px;
-        }
         footer li {
           margin-left: 12px;
           margin-right: 12px;
         }
       }
 
-      @media only screen and (max-width: 398px) {
+      @media only screen and (max-width: 390px) {
         nav a {
           font-weight: 500;
         }
@@ -737,28 +664,8 @@
           height: 450px;
         }
         .welcome {
-          width: 330px;
-          height: 148px;
-        }
-        .atext {
-          width: 330px;
-        }
-        .abtimg {
-          height: 210px;
-          width: 330px;
-        }
-        .gallery {
-          padding: 0px 0px;
-        }
-
-        .img1,
-        .img2,
-        .img3 {
-          height: 210px;
-          width: 330px;
-        }
-        .imgh {
-          padding-top: 30px;
+          width: 320px;
+          height: 128px;
         }
         .imgp {
           font-size: 15px;
@@ -766,8 +673,8 @@
           padding: 5px 10px;
         }
         iframe {
-          width: 330px;
-          height: 210px;
+          width: 320px;
+          height: 160px;
         }
         .m-title {
           margin-left: 10px;
@@ -784,18 +691,11 @@
           height: 450px;
         }
         .welcome {
-          width: 310px;
-          height: 150px;
+          width: 300px;
+          height: 110px;
         }
-
         .atext {
-          font-size: 20px;
-          width: 310px;
-        }
-
-        .abtimg {
-          height: 200px;
-          width: 310px;
+          font-size: 15.5px;
         }
         .imgp {
           font-size: 15px;
@@ -804,7 +704,7 @@
         .img1,
         .img2,
         .img3 {
-          width: 310px;
+          width: 300px;
           height: 199px;
           padding: 0px 0px;
           margin-top: 20px;
@@ -849,11 +749,11 @@
           font-weight: 500;
         }
         img.welcome {
-          height: 140px;
-          width: 310px;
+          height: 110px;
+          width: 295px;
         }
         .herobox {
-          height: 420px;
+          height: 390px;
         }
         .atext {
           width: 280px;
@@ -871,7 +771,7 @@
 
   <button onclick="topFunction()" id="myBtn" title="Go to top">
     <img
-      src="https://i.postimg.cc/P5mCxGqz/4781853-arrow-arrows-direction-down-move-icon.png"
+      src="https://i.postimg.cc/mZQqQtPc/up-arrow.png"
       alt="Top"
       height="32"
       width="32"
@@ -919,10 +819,6 @@
 
     <section class="about-box">
       <div class="about">
-        <img
-          class="abtimg abtimg--1"
-          src="https://i.postimg.cc/0NdLYJ59/Screenshot-2022-05-27-230119.png"
-        />
         <p class="atext">
           <strong> Winstanley Wizards Table Tennis Club </strong> is open all
           year round for adults and juniors, holding “pay and play" sessions in
@@ -930,14 +826,9 @@
           <u>No booking or experience is required.</u> <br />
           <br />
           <b>Come along and play for fun</b>, improve your standards with some
-          coaching, or play for us in the The Leicester League and The Junior
-          Leicester Development League for our junior players.. We provide the
-          table tennis bats for those that require them.
+          coaching, or play for us in the local league. We provide the table
+          tennis bats for those that require them
         </p>
-        <img
-          class="abtimg abtimg--2"
-          src="https://i.postimg.cc/gk1FmWBb/Screenshot-2022-05-27-230148.png"
-        />
       </div>
     </section>
 
@@ -947,7 +838,7 @@
 
       <div class="images">
         <img
-          src="https://i.postimg.cc/L5njjLcc/website-photo-1.jpg"
+          src="https://i.postimg.cc/CM7jFgv7/Screenshot-2022-05-27-230148.png"
           alt="tabletennis"
           class="img1"
         />
@@ -957,7 +848,7 @@
           class="img2"
         />
         <img
-          src="https://i.postimg.cc/nLFjvq73/siluetas-de-ping-pong-negras-jugadores-con-fondo-blanco-191934651.jpg"
+          src="https://i.postimg.cc/mDtGtRY9/Screenshot-2022-05-27-230119.png "
           alt="tabletennis"
           class="img3"
         />
@@ -969,7 +860,6 @@
         <div class="m-title">
           <h1>WHERE TO FIND US</h1>
         </div>
-
         <div class="m-des">
           <h1>The Winstanley School</h1>
           <p style="font-weight: 10px; color: #696969">
