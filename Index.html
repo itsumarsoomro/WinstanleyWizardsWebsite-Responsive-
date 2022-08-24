@@ -16,6 +16,7 @@
         padding: 0%;
         margin: 0%;
         user-select: none;
+        scroll-behavior: smooth;
       }
       body {
         margin: 0;
@@ -23,6 +24,7 @@
         font-weight: 800;
         overflow-x: hidden;
       }
+
       #myBtn {
         display: none; /* Hidden by default */
         position: fixed; /* Fixed/sticky position */
@@ -35,17 +37,20 @@
         cursor: pointer; /* Add a mouse pointer on hover */
         padding: 2px 5px; /* Some padding */
         height: 40px;
-        border-radius: 100px; /* Rounded corners */
-        transition: 200ms ease;
+        border-radius: 100%; /* Rounded corners */
+
         box-shadow: -1px 5px 24px -10px rgba(0, 0, 0, 0.75);
         -webkit-box-shadow: -1px 5px 24px -10px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -1px 5px 24px -10px rgba(0, 0, 0, 0.75);
+
+        transition: all 300ms ease-in-out;
       }
       #myBtn:hover {
         height: 50px;
         background-color: #555; /* Add a dark-grey background on hover */
         padding: 7px 10px; /* Some padding */
       }
+
       header {
         background-color: #0a0e1a;
         width: 100%;
@@ -259,11 +264,17 @@
         font-size: 12px;
       }
       @media only screen and (max-width: 1415px) {
+        .logo {
+          padding: 10px 70px;
+        }
         nav ul {
           margin: 0;
           padding: 0px 70px;
           list-style: none;
           display: flex;
+        }
+        nav li {
+          padding: 20px 20px;
         }
         .about {
           height: 400px;
@@ -275,12 +286,6 @@
         }
         .atext {
           width: 500px;
-        }
-        nav li {
-          padding: 20px 20px;
-        }
-        .logo {
-          padding: 10px 70px;
         }
         .img1,
         .img2,
@@ -298,6 +303,10 @@
         }
       }
       @media only screen and (max-width: 1220px) {
+        .atext {
+          font-size: 20px;
+          font-weight: 500;
+        }
         .img1,
         .img2,
         .img3 {
@@ -308,10 +317,6 @@
           margin-bottom: 40px;
           cursor: pointer;
         }
-        .atext {
-          font-size: 20px;
-          font-weight: 500;
-        }
       }
       @media only screen and (max-width: 1190px) {
         .about {
@@ -320,7 +325,6 @@
         }
         .atext {
           margin: auto;
-
           width: 700px;
         }
         .abtimg {
@@ -374,13 +378,13 @@
           display: flex;
           flex-wrap: wrap;
         }
-        .logo {
-          margin-top: 10px;
-          padding-bottom: 0;
-        }
         nav li {
           margin-left: 20px;
           margin-right: 20px;
+        }
+        .logo {
+          margin-top: 10px;
+          padding-bottom: 0;
         }
         .footer {
           height: 250px;
@@ -406,6 +410,9 @@
           height: 150px;
           width: 500px;
         }
+        .atext {
+          font-size: 18px;
+        }
         .gallery {
           height: 810px;
         }
@@ -425,9 +432,6 @@
           margin-bottom: 20px;
           cursor: pointer;
           pointer-events: none;
-        }
-        .atext {
-          font-size: 18px;
         }
         iframe {
           width: 700px;
@@ -454,6 +458,10 @@
         .imgh {
           padding-top: 80px;
         }
+        .imgp {
+          font-size: 17px;
+          padding-top: 5px;
+        }
         .img1,
         .img2,
         .img3 {
@@ -463,10 +471,6 @@
           margin-top: 20px;
           margin-bottom: 20px;
           cursor: pointer;
-        }
-        .imgp {
-          font-size: 17px;
-          padding-top: 5px;
         }
         iframe {
           width: 670px;
@@ -522,14 +526,11 @@
         .f-last {
           margin: 1px;
           font-size: 10px;
-          padding: 0px 20px;
+          padding: 0px 10px;
           padding-top: 45px;
         }
       }
       @media only screen and (max-width: 570px) {
-        nav a {
-          font-weight: 500;
-        }
         img.herobox {
           width: 100%;
           height: 460px;
@@ -573,9 +574,6 @@
         }
       }
       @media only screen and (max-width: 515px) {
-        nav a {
-          font-weight: 500;
-        }
         .map-title {
           display: flex;
           flex-wrap: wrap;
@@ -601,28 +599,20 @@
           margin-left: 15px;
           margin-right: 15px;
         }
-        nav a {
-          font-weight: 500;
-        }
         footer ul {
           padding: 0px 30px;
         }
       }
       @media only screen and (max-width: 483px) {
-        nav a {
-          font-weight: 500;
-        }
         .welcome {
           width: 400px;
           height: 160px;
           color: white;
           background-blend-mode: multiply;
         }
-
         img.herobox {
           height: 440px;
         }
-
         .atext {
           width: 400px;
           font-size: 20px;
@@ -696,9 +686,6 @@
         nav li {
           margin-left: 12px;
           margin-right: 12px;
-        }
-        nav a {
-          font-weight: 500;
         }
         .about {
           height: 940px;
@@ -814,12 +801,9 @@
           margin-left: 5px;
           margin-right: 5px;
         }
-        nav a {
-          font-weight: 500;
-        }
         img.welcome {
           height: 140px;
-          width: 300px;
+          width: 290px;
         }
         img.herobox {
           height: 400px;
@@ -827,17 +811,14 @@
         .atext {
           width: 280px;
         }
-
-        .f-last {
-          padding-top: 55px;
-        }
-      }
-      @media only screen and (max-width: 355px) {
         footer ul {
           padding: 0px 10px;
         }
         footer li {
           margin: 0px 14px;
+        }
+        .f-last {
+          padding-top: 55px;
         }
       }
     </style>
