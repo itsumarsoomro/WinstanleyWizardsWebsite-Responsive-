@@ -100,20 +100,16 @@
         color: dodgerblue;
       }
       .hero {
-        width: 100%;
         display: flex;
         position: relative;
       }
-      .herobox {
-        width: 100%;
-        height: 600px;
-        object-fit: cover;
-      }
+
       .hero > img {
         background-color: #333;
         background-blend-mode: multiply;
         background-attachment: fixed;
         height: 600px;
+        width: 100%;
       }
 
       .hero > div {
@@ -121,28 +117,25 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 100%;
       }
       .welcome {
         color: white;
-        font-size: 60px;
-        font-weight: 500;
         font-family: sans-serif;
+        text-align: center;
       }
       .welcome--l1 {
         font-size: 36px;
         font-weight: 300;
-        letter-spacing: 1px;
       }
       .welcome--l2 {
         margin-bottom: -15px;
-        margin-left: -20px;
         font-weight: 780;
-        font-size: 70px;
+        font-size: 72px;
       }
       .welcome--l3 {
-        font-size: 75px;
-        letter-spacing: 2.8px;
-        margin-left: -15px;
+        font-size: 82px;
+        font-weight: 500;
       }
 
       .about {
@@ -152,7 +145,7 @@
         background-image: linear-gradient(
           96.5deg,
           rgba(39, 103, 187, 1) 10.4%,
-          rgba(16, 72, 144, 1) 87.7%
+          rgb(12, 80, 168) 87.7%
         );
         color: white;
         text-align: left;
@@ -166,9 +159,9 @@
         margin: 80px 0px;
         object-fit: cover;
 
-        box-shadow: 0px 0px 22px 8px rgba(20, 77, 151, 0.75);
-        -webkit-box-shadow: 0px 0px 22px 8px rgba(20, 77, 151, 0.75);
-        -moz-box-shadow: 0px 0px 22px 8px rgba(20, 77, 151, 0.75);
+        box-shadow: 0px 0px 22px 9px rgba(20, 77, 151, 0.63);
+        -webkit-box-shadow: 0px 0px 22px 9px rgba(20, 77, 151, 0.63);
+        -moz-box-shadow: 0px 0px 22px 9px rgba(20, 77, 151, 0.63);
       }
       .atext {
         width: 700px;
@@ -348,19 +341,12 @@
       @media only screen and (max-width: 1190px) {
         .welcome--l1 {
           font-size: 30px;
-          font-weight: 300;
-          margin-left: 10px;
         }
         .welcome--l2 {
-          margin-bottom: -15px;
-          margin-left: -20px;
-          font-weight: 700;
           font-size: 60px;
         }
         .welcome--l3 {
-          font-size: 60px;
-          letter-spacing: 4.9px;
-          margin-left: -15px;
+          font-size: 68px;
         }
 
         .about {
@@ -525,20 +511,13 @@
       }
       @media only screen and (max-width: 778px) {
         .welcome--l1 {
-          font-size: 25px;
-          font-weight: 300;
-          margin-left: 2px;
+          font-size: 24px;
         }
         .welcome--l2 {
-          margin-bottom: -10px;
-          margin-left: -20px;
-          font-weight: 700;
-          font-size: 50px;
+          font-size: 48px;
         }
         .welcome--l3 {
-          font-size: 51px;
-          letter-spacing: 3.5px;
-          margin-left: -15px;
+          font-size: 54px;
         }
       }
       @media only screen and (max-width: 695px) {
@@ -549,7 +528,7 @@
           font-weight: 500;
         }
         img.herobox {
-          height: 480px;
+          height: 540px;
         }
         .atext {
           font-size: 20px;
@@ -590,19 +569,12 @@
       @media only screen and (max-width: 640px) {
         .welcome--l1 {
           font-size: 20px;
-          font-weight: 300;
-          margin-left: 4px;
         }
         .welcome--l2 {
-          margin-bottom: -10px;
-          margin-left: -20px;
-          font-weight: 700;
           font-size: 42px;
         }
         .welcome--l3 {
-          font-size: 42px;
-          letter-spacing: 3.4px;
-          margin-left: -15px;
+          font-size: 48px;
         }
       }
       @media only screen and (max-width: 619px) {
@@ -619,7 +591,7 @@
       @media only screen and (max-width: 570px) {
         img.herobox {
           width: 100%;
-          height: 500px;
+          height: 520px;
         }
 
         .atext {
@@ -659,19 +631,13 @@
       @media only screen and (max-width: 550px) {
         .welcome--l1 {
           font-size: 19px;
-          font-weight: 300;
-          margin-left: -9px;
         }
         .welcome--l2 {
-          margin-bottom: -10px;
-          margin-left: -20px;
-          font-weight: 600;
           font-size: 38px;
         }
         .welcome--l3 {
-          font-size: 42px;
-          letter-spacing: 0.5px;
-          margin-left: -15px;
+          margin-top: 4px;
+          font-size: 43px;
         }
       }
       @media only screen and (max-width: 515px) {
@@ -706,19 +672,18 @@
       }
       @media only screen and (max-width: 485px) {
         .welcome--l1 {
-          font-size: 16px;
-          font-weight: 300;
+          font-size: 18px;
+          transform: scale(1, 1.5);
         }
         .welcome--l2 {
-          margin-bottom: -5px;
-          margin-left: -20px;
-          font-weight: 600;
-          font-size: 32px;
+          margin-top: 15px;
+          font-size: 36px;
+          transform: scale(1, 1.75);
         }
         .welcome--l3 {
-          font-size: 35px;
-
-          margin-left: -15px;
+          margin-top: 20px;
+          font-size: 41px;
+          transform: scale(1, 1.2);
         }
       }
       @media only screen and (max-width: 483px) {
@@ -779,6 +744,22 @@
           margin-bottom: -40px;
         }
       }
+      @media only screen and (max-width: 429px) {
+        .welcome--l1 {
+          font-size: 18px;
+          transform: scale(1, 1.5);
+        }
+        .welcome--l2 {
+          margin-top: 15px;
+          font-size: 36px;
+          transform: scale(1, 1.75);
+        }
+        .welcome--l3 {
+          margin-top: 20px;
+          font-size: 41px;
+          transform: scale(1, 1.2);
+        }
+      }
       @media only screen and (max-width: 447px) {
         .abtimg {
           width: 360px;
@@ -786,6 +767,22 @@
         }
         .atext {
           width: 360px;
+        }
+      }
+      @media only screen and (max-width: 429px) {
+        .welcome--l1 {
+          font-size: 17px;
+          transform: scale(1, 1.2);
+        }
+        .welcome--l2 {
+          margin-top: 10px;
+          font-size: 34px;
+          transform: scale(1, 1.5);
+        }
+        .welcome--l3 {
+          margin-top: 10px;
+          font-size: 38px;
+          transform: scale(1, 1);
         }
       }
       @media only screen and (max-width: 425px) {
@@ -797,7 +794,7 @@
           height: 940px;
         }
       }
-      @media only screen and (max-width: 416px) {
+      /* @media only screen and (max-width: 416px) {
         .welcome--l1 {
           font-size: 16px;
           font-weight: 300;
@@ -815,7 +812,7 @@
 
           margin-left: -14px;
         }
-      }
+      } */
 
       @media only screen and (max-width: 398px) {
         nav a {
@@ -1007,7 +1004,7 @@
           /> -->
 
           <p class="welcome welcome--l1">WELCOME TO THE OFFICAL WEBSITE OF</p>
-          <p class="welcome welcome--l2">WINSTANLEY&nbsp;WIZARDS</p>
+          <p class="welcome welcome--l2">WINSTANLEYWIZARDS</p>
           <p class="welcome welcome--l3">TABLE TENNIS CLUB</p>
         </div>
       </div>
