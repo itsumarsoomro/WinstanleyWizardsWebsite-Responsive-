@@ -103,16 +103,16 @@
         display: flex;
         position: relative;
       }
-
-      .hero > img {
-        background-color: #333;
+      .hero {
+        background-image: url("https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1199&q=80");
+        /* background-color: rgb(160, 150, 150); */
+        background-size: cover;
         background-blend-mode: multiply;
         background-attachment: fixed;
-        object-fit: cover;
+        /* object-fit: cover; */
         height: 600px;
         width: 100%;
       }
-
       .hero > div {
         position: absolute;
         top: 50%;
@@ -243,6 +243,57 @@
         box-shadow: 0px 0px 22px 8px rgba(234, 237, 243, 0.75);
         -webkit-box-shadow: 0px 0px 22px 8px rgba(234, 237, 243, 0.75);
         -moz-box-shadow: 0px 0px 22px 8px rgba(234, 237, 243, 0.75);
+      }
+      section.click-to-action {
+        background-image: url("https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1199&q=80");
+        background-color: #766f6f;
+        background-size: cover;
+        background-blend-mode: multiply;
+        background-attachment: fixed;
+        height: 200px;
+        width: 100%;
+      }
+      .ac-box {
+        color: rgb(255, 255, 255);
+        opacity: 100%;
+        padding: 38px 0px;
+        text-align: center;
+      }
+      .ac-des > h1 {
+        font-size: 30px;
+        font-family: sans-serif;
+        text-align: center;
+      }
+      p.ac-text {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 3px;
+        font-family: sans-serif;
+        text-align: center;
+      }
+      .ac-button > button {
+        height: 42px;
+        width: 250px;
+        border-radius: 20px;
+
+        background-color: #0063b5;
+        color: white;
+        border: 1px solid #0063b5;
+
+        font-size: 14px;
+        font-weight: 500;
+        font-family: sans-serif;
+
+        margin-top: 26px;
+
+        transition: all 0.2s;
+        cursor: pointer;
+      }
+      .ac-button > button:hover {
+        height: 44px;
+        width: 270px;
+        background-color: #f56509;
+        border: 1px solid #f56509;
       }
       footer {
         background-color: #0a0e1a;
@@ -1012,18 +1063,7 @@
   <body>
     <section class="hero-box">
       <div class="hero">
-        <img
-          src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1199&q=80"
-          class="herobox"
-          alt="herobox"
-        />
         <div class="hero-description">
-          <!-- <img
-            src="https://i.postimg.cc/qMyM1j1r/Winstanely-Recovered.png"
-            alt=""
-            class="welcome"
-          /> -->
-
           <p class="welcome welcome--l1">WELCOME TO THE OFFICAL WEBSITE OF</p>
           <p class="welcome welcome--l2">WINSTANLEY WIZARDS</p>
           <p class="welcome welcome--l3">TABLE TENNIS CLUB</p>
@@ -1105,6 +1145,24 @@
             marginwidth="0"
           >
           </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="click-to-action">
+      <div class="ac-box">
+        <div class="ac-des">
+          <h1>JOIN US</h1>
+          <p class="ac-text">Learn more about our memberships.</p>
+        </div>
+        <div class="ac-button">
+          <button>
+            <a
+              href="Contact.html"
+              style="text-decoration: none; list-style: none; color: white"
+              >CLICK HERE</a
+            >
+          </button>
         </div>
       </div>
     </section>
