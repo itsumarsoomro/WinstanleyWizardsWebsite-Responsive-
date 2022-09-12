@@ -105,12 +105,14 @@
       }
       .hero {
         background-image: url("https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1199&q=80");
-        background-size: 100% 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
         background-attachment: fixed;
         object-fit: cover;
         height: 600px;
         width: 100%;
       }
+
       .hero > div {
         position: absolute;
         top: 50%;
@@ -183,6 +185,7 @@
       .imgp {
         text-align: center;
         font-weight: 500;
+        color: #d8d4d4;
       }
       .images {
         display: flex;
@@ -228,7 +231,7 @@
         padding: 30px;
         color: rgb(0, 0, 0);
         font-size: small;
-        font-weight: 500;
+        font-weight: 700;
       }
       iframe {
         width: 1009px;
@@ -264,10 +267,11 @@
       }
       p.ac-text {
         font-size: 16px;
-        font-weight: 500;
-        margin-top: 3px;
+        font-weight: 400;
+        margin-top: 1px;
         font-family: sans-serif;
         text-align: center;
+        color: #d8d4d4;
       }
       .ac-button > button {
         height: 42px;
@@ -318,7 +322,7 @@
         color: white;
         text-decoration: none;
         font-size: 16px;
-        font-weight: 100;
+        font-weight: 400;
       }
       footer a:hover {
         color: dodgerblue;
@@ -556,6 +560,9 @@
         }
       }
       @media only screen and (max-width: 800px) {
+        .hero {
+          background-size: 100% 100%;
+        }
         .gallery {
           height: 1030px;
         }
@@ -1105,8 +1112,8 @@
         </div>
 
         <div class="m-des">
-          <h1>The Winstanley School</h1>
-          <p style="font-weight: 10px; color: #696969">
+          <h1 style="color: black">The Winstanley School</h1>
+          <p style="font-weight: 10px; color: #4c4848">
             Kingsway N, Braunstone Town <br />
             Leicester LE3 3BD, United Kingdom
           </p>
