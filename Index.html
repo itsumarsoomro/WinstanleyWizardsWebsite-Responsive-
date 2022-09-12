@@ -111,10 +111,6 @@
         -webkit-background-attachment: fixed;
         height: 600px;
         width: 100%;
-
-        @media (max-widht: @iphone-screen) {
-          background-attachment: fixed;
-        }
       }
 
       .hero > div {
@@ -565,8 +561,7 @@
       }
       @media only screen and (max-width: 800px) {
         .hero {
-          background-size: 100% 100%;
-          -webkit-background-size: 100% 100%;
+          background-size: contain;
         }
         .gallery {
           height: 1030px;
