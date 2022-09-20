@@ -52,7 +52,6 @@
         background-color: #555; /* Add a dark-grey background on hover */
         padding: 7px 10px; /* Some padding */
       }
-
       header {
         background-color: #0a0e1a;
         width: 100%;
@@ -104,7 +103,7 @@
         position: relative;
         background-image: url("https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1199&q=80");
         background-size: 100% 100%;
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         object-fit: cover;
         height: 600px;
         width: 100%;
@@ -139,7 +138,7 @@
       .about {
         display: flex;
         position: relative;
-        justify-content: space-evenly;
+        justify-content: space-around;
         background-image: linear-gradient(
           96.5deg,
           rgba(39, 103, 187, 1) 10.4%,
@@ -161,6 +160,7 @@
         -webkit-box-shadow: 0px 0px 22px 9px rgba(20, 77, 151, 0.63);
         -moz-box-shadow: 0px 0px 22px 9px rgba(20, 77, 151, 0.63);
       }
+
       .atext {
         width: 700px;
         font-size: 20px;
@@ -404,6 +404,7 @@
         .about {
           height: 860px;
           flex-direction: column;
+          padding: 56px 0px;
         }
         .atext {
           margin: auto;
@@ -413,11 +414,10 @@
           margin: auto;
           width: 400px;
           height: 230px;
-          padding: 0px 0px;
         }
         .gallery {
           width: 100%;
-          height: 770px;
+          height: 600px;
           background-color: #191e23;
           color: white;
         }
@@ -430,17 +430,14 @@
         }
         .imgh {
           text-align: center;
-          padding-top: 100px;
+          /* padding-top: 100px; */
+          /* padding-top: 80px; */
         }
         .imgp {
           text-align: center;
-        }
-        .imgh {
-          padding-top: 80px;
-        }
-        .imgp {
           padding-bottom: 20px;
         }
+
         .img1,
         .img2,
         .img3 {
@@ -492,12 +489,12 @@
         .atext {
           font-size: 18px;
         }
-        .gallery {
+        /* .gallery {
           height: 810px;
-        }
-        .imgh {
+        } */
+        /* .imgh {
           padding-top: 80px;
-        }
+        } */
         .imgp {
           padding-bottom: 20px;
         }
@@ -532,11 +529,11 @@
           font-weight: 100;
         }
         .gallery {
-          height: 830px;
+          height: 605px;
         }
-        .imgh {
+        /* .imgh {
           padding-top: 80px;
-        }
+        } */
         .imgp {
           font-size: 17px;
           padding-top: 5px;
@@ -558,7 +555,7 @@
       }
       @media only screen and (max-width: 800px) {
         .gallery {
-          height: 1030px;
+          height: 876px;
         }
       }
       @media only screen and (max-width: 778px) {
@@ -649,11 +646,9 @@
           font-weight: 100;
         }
         .gallery {
-          height: 1030px;
+          height: 874px;
         }
-        .imgh {
-          padding-top: 80px;
-        }
+
         .img1,
         .img2,
         .img3 {
@@ -747,8 +742,8 @@
           font-size: 20px;
           font-weight: 100;
         }
-        .imgh {
-          padding-top: 0px;
+        .gallery {
+          height: 860px;
         }
         .imgp {
           padding-top: 5px;
@@ -767,9 +762,6 @@
           padding-top: 10px;
           padding: 0px 0px;
           cursor: pointer;
-        }
-        .gallery {
-          height: 878px;
         }
         iframe {
           margin-top: 30px;
@@ -850,7 +842,11 @@
           transform: scale(1, 1.7);
         }
       }
-
+      @media only screen and (max-width: 409px) {
+        .gallery {
+          height: 877px;
+        }
+      }
       @media only screen and (max-width: 398px) {
         nav a {
           font-weight: 500;
@@ -866,7 +862,8 @@
           width: 330px;
         }
         .gallery {
-          padding: 0px 0px;
+          padding: 56px 0px;
+          height: 818px;
         }
 
         .img1,
@@ -875,9 +872,7 @@
           height: 210px;
           width: 330px;
         }
-        .imgh {
-          padding-top: 30px;
-        }
+
         .imgp {
           font-size: 15px;
           font-weight: 100;
@@ -914,6 +909,9 @@
           font-size: 32px;
           transform: scale(1, 1.7);
         }
+        .gallery {
+          height: 818px;
+        }
       }
 
       @media only screen and (max-width: 369px) {
@@ -933,6 +931,9 @@
         .abtimg {
           height: 200px;
           width: 300px;
+        }
+        div.gallery {
+          height: 780px;
         }
         .imgp {
           font-size: 15px;
@@ -1209,5 +1210,11 @@
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
+
+    //clicked function for action button
+    // function clicked() {
+    //   document.getElementsById("b").style.backgroundColor = "rgb(245,101,9)";
+    //   // document.getElementById("textarea").style.backgroundColor = "white"
+    // }
   </script>
 </html>
