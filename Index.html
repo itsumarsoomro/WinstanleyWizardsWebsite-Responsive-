@@ -79,30 +79,30 @@
         text-decoration: none;
         font-size: 16px;
         font-weight: 500;
-        transition: 500ms ease;
+        transition: all 700ms ease;
+        padding: 15px 10px;
       }
       nav li:nth-child(1) {
-        padding: 15px 20px;
+        padding: 15px 10px;
         border-radius: 12px;
         pointer-events: none;
 
         background-color: #333;
         cursor: pointer;
       }
-      nav li:hover {
-        padding: 15px 20px;
+      nav a:hover {
         border-radius: 12px;
+
+        color: dodgerblue;
 
         background-color: #333;
       }
-      nav a:hover {
-        color: dodgerblue;
-      }
+
       .hero {
         display: flex;
         position: relative;
         background-image: url("https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1199&q=80");
-        background-size: 100% 100%;
+        background-size: cover;
         /* background-attachment: fixed; */
         object-fit: cover;
         height: 600px;
@@ -192,8 +192,8 @@
       .img1,
       .img2,
       .img3 {
-        width: 400px;
-        height: 250px;
+        width: 380px;
+        height: 220px;
         padding: 0px 0px;
         margin-top: 40px;
         cursor: pointer;
@@ -204,8 +204,7 @@
         -moz-box-shadow: -1px 5px 24px 1px rgba(0, 0, 0, 0.75);
       }
       .images > img:hover {
-        height: 280px;
-        width: 450px;
+        transform: scale(1.1);
       }
       .map-box {
         width: 100%;
@@ -323,7 +322,6 @@
       }
       footer a:hover {
         color: dodgerblue;
-        font-weight: bold;
         transition: 1s all ease-in-out;
       }
       .f-last {
