@@ -330,7 +330,8 @@
       }
       @media only screen and (max-width: 1415px) {
         .logo {
-          padding: 10px 70px;
+          padding: 0px 70px;
+          padding-top: 10px;
         }
         nav ul {
           margin: 0;
@@ -339,7 +340,7 @@
           display: flex;
         }
         nav li {
-          padding: 20px 20px;
+          padding: 0px 20px;
         }
 
         .about {
@@ -458,9 +459,8 @@
           margin-left: 20px;
           margin-right: 20px;
         }
-        .logo {
-          margin-top: 10px;
-          padding-bottom: 0;
+        .logo > a {
+          height: 70px;
         }
         footer {
           height: 230px;
@@ -481,7 +481,11 @@
           padding-top: 60px;
         }
       }
-
+      @media only screen and (max-width: 930px) {
+        .container {
+          height: 150px;
+        }
+      }
       @media only screen and (max-width: 904px) {
         .atext {
           font-size: 18px;
@@ -633,7 +637,13 @@
           padding-top: 45px;
         }
       }
-      @media only screen and (max-width: 570px) {
+      @media only screen and (max-width: 572px) {
+        nav ul {
+          padding: 0px 0px;
+        }
+        nav li {
+          margin: 0px 7.5px;
+        }
         .hero {
           width: 100%;
           height: 480px;
@@ -708,10 +718,10 @@
         }
       }
       @media only screen and (max-width: 489px) {
-        nav li {
+        /* nav li {
           margin-left: 15px;
           margin-right: 15px;
-        }
+        } */
         footer ul {
           padding: 0px 30px;
         }
@@ -816,12 +826,14 @@
           width: 360px;
         }
       }
+      @media only screen and (max-width: 430px) {
+        nav li {
+          margin: 6px;
+          padding: 10px;
+        }
+      }
 
       @media only screen and (max-width: 425px) {
-        nav li {
-          margin-left: 12px;
-          margin-right: 12px;
-        }
         .about {
           height: 940px;
         }
@@ -918,8 +930,8 @@
 
       @media only screen and (max-width: 369px) {
         nav li {
-          margin-left: 10px;
-          margin-right: 10px;
+          margin: 0px 3px;
+          padding: 0px 5px;
         }
         nav a {
           font-weight: 500;
@@ -985,11 +997,7 @@
         }
       }
       @media only screen and (max-width: 355px) {
-        nav li {
-          padding: 20px 10px;
-          margin-left: 5px;
-          margin-right: 5px;
-        }
+
         img.welcome {
           height: 170px;
           width: 290px;
