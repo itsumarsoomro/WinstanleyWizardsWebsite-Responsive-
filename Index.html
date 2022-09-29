@@ -70,9 +70,10 @@
       }
       nav li {
         display: inline-block;
-        margin: 10px 35px;
         position: relative;
         transition: 500ms ease;
+        margin: 0px 15px;
+        margin-top: 25px;
       }
       nav a {
         color: white;
@@ -80,24 +81,18 @@
         font-size: 16px;
         font-weight: 500;
         transition: all 700ms ease-in-out;
-        padding: 15px 10px;
+        padding: 14px 20px;
       }
-      nav li:nth-child(1) {
-        padding: 15px 10px;
+      .navhome {
+        padding: 14px 20px;
         border-radius: 12px;
-        pointer-events: none;
-
         background-color: #333;
         cursor: pointer;
       }
       nav a:hover {
-        border-radius: 12px;
-
         color: dodgerblue;
-
         background-color: #333;
       }
-
       .hero {
         display: flex;
         position: relative;
@@ -1039,7 +1034,9 @@
       <nav>
         <ul>
           <li>
-            <a href="Index.html" style="color: dodgerblue">Home</a>
+            <a class="navhome" href="Index.html" style="color: dodgerblue"
+              >Home</a
+            >
           </li>
           <li><a href="Contact.html">Contact</a></li>
           <li><a href="News.html">News</a></li>
