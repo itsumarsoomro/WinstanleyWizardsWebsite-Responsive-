@@ -72,6 +72,7 @@
         transition: 500ms ease;
         margin: 0px 23px;
         margin-top: 25px;
+        cursor: pointer;
       }
       nav a {
         color: white;
@@ -80,20 +81,13 @@
         font-weight: 500;
         transition: all 700ms ease-in-out;
         padding: 16px 20px;
-      }
-      /* .navhome {
-        padding: 16px 20px;
-        border-radius: 12px;
-        background-color: #333;
         cursor: pointer;
       }
-      nav li:nth-child(1):hover {
-        background-color: none;
-      } */
       nav a:hover {
         border-radius: 12px;
         color: dodgerblue;
         background-color: #333;
+        cursor: pointer;
       }
       .hero {
         display: flex;
@@ -200,6 +194,7 @@
       }
       .img:hover {
         transform: scale(1.1);
+        cursor: zoom-in;
       }
       .map-box {
         width: 100%;
@@ -239,7 +234,7 @@
       section.click-to-action {
         background-image: url("https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1199&q=80");
         background-color: #766f6f;
-        background-size: 100% 100%;
+        background-size: cover;
         background-blend-mode: multiply;
         background-attachment: fixed;
         height: 200px;
@@ -264,9 +259,11 @@
         text-align: center;
         color: #d8d4d4;
       }
+      .ac-l {
+        padding: 15px 75px;
+      }
       .ac-button > button {
-        height: 42px;
-        width: 250px;
+        padding: 11px 0px;
         border-radius: 20px;
 
         background-color: #0063b5;
@@ -279,12 +276,10 @@
 
         margin-top: 26px;
 
-        transition: all 0.2s;
+        transition: all 1s;
         cursor: pointer;
       }
       .ac-button > button:hover {
-        height: 44px;
-        width: 270px;
         background-color: #f56509;
         border: 1px solid #f56509;
       }
@@ -1111,8 +1106,9 @@
           <p class="ac-text">Learn more about our club & membership.</p>
         </div>
         <div class="ac-button">
-          <button>
+          <button href="Contact.html">
             <a
+              class="ac-l"
               href="Contact.html"
               style="text-decoration: none; list-style: none; color: white"
               >CLICK HERE</a
